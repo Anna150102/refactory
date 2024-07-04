@@ -1,9 +1,392 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Button from "../components/Button.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-	<h1>holi</h1>
-</Layout>
+<Layout title="THE FUTURE REAL ESTATE MILLIONAIRE COACHING">
+	<div class="inicio-content container">
+		<h2>Maximize Your Real Estate Investing Potential.</h2>
+		<p>
+			Real Estate Investing Coaching for those that want to acquire a
+			Millionaire Mindset!
+		</p>
+		<Button />
+	</div>
 
+	<section class="about">
+		<div class="about-1">
+			<h2>ABOUT MY REAl ESTATE INVESTING COACHING</h2>
+			<p>
+				I provide expert real estate investing coaching to new &
+				experienced real estate investors who are looking to create a
+				limitless abundant lifesyle. I believe creating a lifestyle
+				where you have time & money freedom are not only possible but
+				closer than you think.  With my expert advice & coaching, you
+				will be surprised at what you will can accomplish!
+			</p>   ​
+
+			<p>- Rommel Pravia</p>
+
+			<p>Founder & Senior Real Estate Investing Coach</p>
+		</div>
+
+		<div class="about-2"></div>
+	</section>
+
+	<section class="about-3">
+		<div class="about-5"></div>
+		<div class="about-4">
+			<h2 class="a1">ADVANCED REAL ESTATE AND MINDSET PROGRAM</h2>
+			<h1 class="a2">CA$ 5,000</h1>
+			<h4 class="a3">
+				Perfect for those with 3 to 5 years experience in real estate
+				who want to scale their business
+
+				<center> valid for 6 months </center>
+			</h4>
+
+			<center><button class="select">SELECT</button></center>
+
+			<div class="a4">
+				<ul>
+					<li>Visualization and Goal Setting Techniques</li>
+					<li>Laser Focus Real Estate business Training</li>
+					<li>Millionaire Mindset in Your business</li>
+					<li>Branding Package and Becoming an Influencer</li>
+					<li>Wealth Beyond Your Current Limits</li>
+					<li>Implementation and Execution of Bigger Goals</li>
+					<li>
+						1 Free Ticket to Our Real Estate and Wealth retreat in
+						SJ
+					</li>
+					<li>And Much More!</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="carousel-container">
+		<div>
+			<div class="frases">
+				<div class="carousel">
+					<div class="carousel-content">
+						<div class="phrase">
+							“We highly recommend Rommel's real estate coaching
+							for experienced real estate investors. As a result
+							of his coaching, our real estate business has
+							trippled since joining 3 months ago.”
+							<p>Heather & Steve smith</p>
+						</div>
+						<div class="phrase">
+							“Rommel's expert coaching has helped me navigate the
+							real estate investing industry and make smart & wise
+							investment decisions. Three years later, he
+							continues to be an integral part of our power team &
+							is continuing to help us grow our business.”
+							<p>Mike mcdonald</p>
+						</div>
+
+						<div class="phrase">
+							“Coach Rommel's knowledge & experience provided me
+							with valuable insights into the real estate
+							industry. His coaching helped me achieve success in
+							my first real estate deal.”
+						</div>
+						<p>joanne Lee</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="informacion">
+		<div class="Informa">
+			<h2>MEET YOUR COACH</h2>
+
+			<div class="im"></div>
+			<h4>Meet coach rommel pravia</h4>
+
+			<h5>
+				Rommel Pravia is a successful real estate investor with many
+				years of real estate investing experience. He has done FLIPS,
+				BRRRRS, BUY & HOLDS, & JOINT VENTURES, all while using OPM
+				(Other Peoples Money). He has coached many new & experienced
+				investors and has helped them achieve unbelieveable success in
+				the industry. He has a wealth of knowledge & wisdom that he
+				shares with his coaching students.
+			</h5>
+
+			<Button />
+		</div>
+	</section>
+
+	<style>
+
+		.inicio-content {
+			
+			padding: 100px;
+			background-image: linear-gradient(
+					rgba(255, 255, 255, 0.01),
+					rgba(255, 255, 255, 0.01)
+				),
+				url(reloj.png);
+			background-position: center bottom;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.inicio-content h2 {
+			font-size: 94px;
+			line-height: 80px;
+			color: #393b3c;
+			text-transform: uppercase;
+			margin-bottom: 35px;
+			text-align: left;
+		}
+
+		.inicio-content p {
+			font-size: 43px;
+			color: #fdc517;
+			padding: 0 0px;
+			margin-bottom: 25px;
+			text-align: left;
+		}
+
+		h2 {
+    font-size: 40px; 
+    color: #ffc107;
+    font-weight: bold; 
+    text-align: center; 
+    margin-bottom: 20px; 
+    border-bottom: 2px solid #ffc107; 
+}
+
+p {
+    font-weight: bold;
+    color: white; 
+    font-size: 24px;
+    text-align: center;
+}
+
+.about{
+    display: flex;
+
+}
+
+.about-1{
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #393b3c;
+}
+
+
+.about-2{
+    background-image: url(yate.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: 1410px;
+    
+}
+
+.about-3{
+    display: flex;
+  
+
+}
+
+
+
+.about-4 {
+    width: 50%;
+    padding: 100px 100px 100px 100px;
+    background-color: #634248;
+    margin-left: auto; 
+}
+
+.about-5 {
+    background-image: url('escalista.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: 1075px;
+}
+.a1 {
+    font-size: 40px; 
+    color: #f5f4f2;
+    font-weight: bold; 
+    text-align: center; 
+    margin-bottom: 20px; 
+    border-bottom: 2px solid #634248; 
+}
+
+.a2{
+    font-size: 40px; 
+    color: #ffc107;
+    font-weight: bold; 
+    text-align: center; 
+    margin-bottom: 20px; 
+   
+}
+
+.a3{
+    font-size: 16px; 
+    color: #f5f4f2;
+    font-weight: normal;
+}
+
+.select {
+    background-color: #e7c26c; 
+    color: #131212; 
+    font-size: 22px; 
+    padding: 20px 270px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold; 
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.select:hover {
+    background-color: #ffcd38;
+}
+
+.a4 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.a4 ul {
+    padding-left: 0;
+    list-style-type: circle; 
+}
+
+.a4 li {
+    margin-bottom: 30px; 
+    font-weight: normal;
+}
+
+.frases{
+     background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)),
+       
+        url(deportista.png);
+
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 110vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-content {
+    display: flex;
+    animation: slide-left 92s infinite;}
+
+.phrase {
+    flex: 0 0 100%;
+    text-align: center;
+    font-size: 24px;
+    font-style: italic;
+    padding: 20px;
+    color: #ffffff; 
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 2s ease; 
+}
+
+
+@keyframes slide-left {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    33.33%, 66.66% {
+        transform: translateX(-100%);
+    }
+    99.99% {
+        transform: translateX(-200%);
+    }
+}
+
+
+@keyframes show-phrase {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.carousel-content .phrase:nth-child(1) {
+    animation: show-phrase 92s infinite 0s; 
+}
+
+.carousel-content .phrase:nth-child(2) {
+    animation: show-phrase 92s infinite 20s; 
+}
+
+.carousel-content .phrase:nth-child(3) {
+    animation: show-phrase 92s infinite 40s; 
+}
+
+.Informa{
+    width: 100%;
+    padding: 100px 250px 100px 100px;
+    background-color: #2d2e2d;
+}
+
+
+
+.im {
+    background-image: url('download.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70%; 
+    height: 500px; 
+    margin: 0 auto 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+
+h4{
+    font-size: 23px; 
+    color: #ffc107;
+    font-weight: bold; 
+    text-align: center; 
+    margin-bottom: 20px; 
+    border-bottom: 2px solid #2d2e2d; 
+}
+
+h5{
+    font-weight: normal; 
+    color: white; 
+    font-size: 16px;
+    text-align: center;
+}
+
+	</style>
+</Layout>
