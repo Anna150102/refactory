@@ -1,122 +1,131 @@
-<header class="header">
-    <div class="menu container">
-        
-        <img class="logo" src="rmb.png" alt="">
-        <h3 >The future real estate millionaire coaching</h3>
+<header class='header'>
+  <div class='menu container'>
+    <img class='logo' src='rmb.png' alt='' />
+    <h3>The future real estate millionaire coaching</h3>
 
-        <input type="checkbox" id="menu" />
-        <label for="menu">
-            <img src="/img/menu.png" class="menu-icono" alt="">
-        </label>
+    <input type='checkbox' id='menu' />
+    <label for='menu'>
+      <img src='/img/menu.png' class='menu-icono' alt='' />
+    </label>
 
-        <nav class="navbar">
-            <ul>
-                <li><a href="/about">ABOUT</a></li>
-                <li><a href="/plans">PLANS</a></li>
-                <li><a href="/podcast">PODCAST</a></li>
-                <li><a href="/vlog">VLOG</a></li>
-                <li><a href="/contact">CONTACT</a></li>
-                <li><a href="/index.html">INICIO</a></li>
-            </ul>
-
-        </nav>
-    </div>
-
+    <nav class='navbar'>
+      <ul>
+        <li><a href='/about'>ABOUT</a></li>
+        <li><a href='/plans'>PLANS</a></li>
+        <li><a href='/podcast'>PODCAST</a></li>
+        <li><a href='/vlog'>VLOG</a></li>
+        <li><a href='/contact'>CONTACT</a></li>
+        <li><a href='/'>INICIO</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <style>
+  /* Móviles grandes */
+  @media (min-width: 576px) {
+    /* Tus estilos para móviles grandes */
+  }
+
+  /* Tabletas */
+  @media (min-width: 768px) {
+    /* Tus estilos para tabletas */
+  }
+
+  /* Escritorios pequeños */
+  @media (min-width: 992px) {
+    /* Tus estilos para escritorios pequeños */
+  }
+
+  /* Escritorios grandes */
+  @media (min-width: 1200px) {
+    /* Tus estilos para escritorios grandes */
     .header {
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 10vh; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #393b3c;
-
-}
-
-.header-content{
-color: #cacac4;
-font-size: 25px;
-font-weight: 500;
-text-transform: uppercase
-;
-
-}
-.menu{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-}
-
-.menu .navbar ul li{
-    position: relative;
-    float: right;
-    list-style: none;
-}
-.menu .navbar ul li a{
-font-size: 18px;
-padding: 10px;
-color: #fdc517;
-display: block;
-font-size: 600;
-font-weight: bold;
-}
-
-.menu .navbar ul li a:hover{
-   color: #a8d3ec;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 10vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #393b3c;
     }
 
-#menu {
-    display: none;
-}
+    .header-content {
+      color: #cacac4;
+      font-size: 25px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+    .menu {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
-.menu-icono{
-    width: 25px;
+    .menu .navbar ul li {
+      position: relative;
+      float: right;
+      list-style: none;
+    }
+    .menu .navbar ul li a {
+      font-size: 18px;
+      padding: 10px;
+      color: #fdc517;
+      display: block;
+      font-size: 600;
+      font-weight: bold;
+    }
 
-}
+    .menu .navbar ul li a:hover {
+      color: #a8d3ec;
+    }
 
-.menu label{
-    cursor: pointer;
-    display: none;
-}
+    #menu {
+      display: none;
+    }
 
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    
-}
+    .menu-icono {
+      width: 25px;
+    }
 
+    .menu label {
+      cursor: pointer;
+      display: none;
+    }
 
-.title {
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 38px;
-    font-style: italic;
-    font-weight: bold;
-    text-align: left;
-    position: relative; 
-    margin: 0;
-    padding: 0 0px; /* Añadido un espacio interior a los lados para separar el texto del borde */
-}
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-p {
-    font-weight: 300;
-    color: white;
-    font-size: 15px;
-    text-align: left;
-    margin: 24px 0;
-    padding: 0;
-}
+    .title {
+      color: #ffffff;
+      text-transform: uppercase;
+      font-size: 38px;
+      font-style: italic;
+      font-weight: bold;
+      text-align: left;
+      position: relative;
+      margin: 0;
+      padding: 0 0px; /* Añadido un espacio interior a los lados para separar el texto del borde */
+    }
 
-h3{
-    color: white;
-}
+    p {
+      font-weight: 300;
+      color: white;
+      font-size: 15px;
+      text-align: left;
+      margin: 24px 0;
+      padding: 0;
+    }
+
+    h3 {
+      color: white;
+    }
+  }
 </style>
