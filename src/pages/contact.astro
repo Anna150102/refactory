@@ -20,20 +20,21 @@ import Layout from "../layouts/Layout.astro";
     </section>
 
     <section class="form">
-        <form>
+        <form action="https://formsubmit.co/330100anavargas.asuncion@gmail.com" method="POST" >
             <div class="mb-3">
                 <label for="name" class="form-label">First Name</label>
-                <input type="text" class="form-control" id="name" />
+                <input name="First Name" type="text" class="form-control" id="name" />
             </div>
             <div class="mb-3">
                 <label for="Last" class="form-label">Last Name</label>
-                <input type="text" class="form-control" id="Last" />
+                <input name="Last Name" type="text" class="form-control" id="Last" />
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label"
                     >Email *</label
                 >
                 <input
+                name="email"
                     type="email"
                     class="form-control"
                     id="exampleInputEmail1"
@@ -45,15 +46,15 @@ import Layout from "../layouts/Layout.astro";
             </div>
             <div class="mb-3">
                 <label for="Phone" class="form-label">Phone</label>
-                <input type="number" class="form-control" id="Phone" />
+                <input  name="Phone" type="number" class="form-control" id="Phone" />
             </div>
             <div class="mb-3">
                 <label for="Comments" class="form-label">Comments</label>
-                <input type="text" class="form-control" id="Comments" />
+                <input name="Comentario" type="text" class="form-control" id="Comments" />
             </div>
 
-            <button type="button" class="btn btn-outline-warning">SUBMIT</button
-            >
+            <button type="button" class="btn btn-outline-warning">ENVIAR</button>
+            <input type="hidden" name="_next" value="The future real estate millionaire coaching"/>
         </form>
     </section>
 </body>
