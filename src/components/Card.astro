@@ -1,40 +1,22 @@
 ---
-const { href, title, body, src, h6 } = Astro.props
+const { link, title, image, body, date } = Astro.props
 ---
 
-<body>
-  <a
-    href={href}
-    class='flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700'
-  >
+<div class='bg-white border rounded-lg lg:px-2 lg:flex lg:items-center'>
+  <a href={link} class='lg:flex lg:items-center'>
     <img
-      class='object-cover w-full h-full rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-s-lg'
-      src={src}
-      alt=''
+      src={image}
+      alt='entrada de un hogar'
+      class='rounded-t-lg w-full h-56 bg-center bg-cover object-cover lg:w-52 lg:h-52 lg:shrink-0'
     />
-    <div class='flex flex-col justify-between p-4 leading-normal'>
-      <h6 class='text-xs italic tracking-tight' style='color: #393b3c;'>
-        Rommel Pravia
-      </h6>
-      <h6 class='text-xs italic tracking-tight' style='color: #393b3c;'>
-        {h6}
-      </h6>
-      <h5
-        class='mb-2 text-2xl font-bold tracking-tight'
-        style='color: #393b3c;'
-      >
-        {title}
-      </h5>
-      <p class='mb-3 font-normal' style='color: #393b3c;'>
+
+    <div class='p-4 space-y-3'>
+      <h2 class='italic'>{date}</h2>
+      <h3 class='text-2xl font-bold'>{title}</h3>
+
+      <p class='font-normal text-gray-700'>
         {body}
       </p>
     </div>
   </a>
-</body>
-
-<style>
-  body {
-    width: 960px;
-    margin: 60px auto 20px;
-  }
-</style>
+</div>

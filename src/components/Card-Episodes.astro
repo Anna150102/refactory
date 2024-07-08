@@ -1,0 +1,22 @@
+---
+const { link, episode, body, date } = Astro.props
+---
+
+<article class='pb-3 border-b border-slate-100 space-y-2'>
+  <div class='space-y-2'>
+    <h3 class='font-light text-sm text-gray-400'>
+      {date}
+    </h3>
+
+    <a
+      href={link}
+      class='grid place-content-center w-28 h-9 px-3 py-1.5 border border-primary-color text-primary-color rounded hover:bg-primary-color hover:text-black transition duration-150 ease-in-out'
+    >
+      {episode}
+    </a>
+  </div>
+
+  <p class='text-slate-100'>
+    {body}
+  </p>
+</article>

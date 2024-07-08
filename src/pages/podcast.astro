@@ -1,233 +1,91 @@
 ---
-import Layout from '../layouts/Layout.astro'
+import ImageProfile from '@assets/profile-2.jpg'
+import Episodes from '@components/Card-Episodes.astro'
+import Layout from '@layouts/Layout.astro'
+import { Image } from 'astro:assets'
 ---
 
 <Layout title='Podcast'>
-  <div class='section'>
-    <div class='contain'>
-      <div class='content-section'>
-        <div class='title'>
-          <h1>PODCAST</h1>
-        </div>
+  <main class='bg-secondary-color px-3 py-10 space-y-8 md:px-20 lg:px-44'>
+    <section class='flex flex-col-reverse gap-4 lg:flex-row'>
+      <div class='space-y-4 shrink-0 lg:w-3/5'>
+        <h1 class='text-slate-100 text-start text-4xl font-semibold italic'>
+          PODCAST
+        </h1>
 
-        <div class='content'>
-          <p>
-            Welcome to my podcast, "THE FUTURE REAL ESTATE MILLIONAIRE COACHING" <br
-            />
+        <p class='text-slate-100 '>
+          Welcome to my podcast, "THE FUTURE REAL ESTATE MILLIONAIRE COACHING"
+          <br />
 
-            Through this medium, we talk about everything real estate, from
-            interviews to the top real estate investors in canada and the us, to
-            lunch & learn podcasts featuring yours truly, to running workshops
-            on topics such as, "your first investment in real estate, what JV
-            partners are & how to capitalize on Joint ventures, to implementing
-            real estate strategies such as a flip, a wholetail, a buy & hold, &
-            a brrrrr, & many other topics that will be of interest to our
-            audience! You will get it all here. <br />
+          Through this medium, we talk about everything real estate, from
+          interviews to the top real estate investors in canada and the us, to
+          lunch & learn podcasts featuring yours truly, to running workshops on
+          topics such as, "your first investment in real estate, what JV
+          partners are & how to capitalize on Joint ventures, to implementing
+          real estate strategies such as a flip, a wholetail, a buy & hold, & a
+          brrrrr, & many other topics that will be of interest to our audience!
+          You will get it all here .<br />
 
-            ​ I hope you enjoy the podcast episodes (you can catch them by
-            clicking on the episode links below!)
-            <br />
+          I hope you enjoy the podcast episodes (you can catch them by clicking
+          on the episode links below !)<br />
 
-             Here is to many fantastic episodes coming your way! <br />
+          Here is to many fantastic episodes coming your way!<br />
 
-            ​ Rommel Pravia <br />
+          Rommel Pravia<br />
 
-            Founder and CEO of The 10X real estate advisor and THE FUTURE REAL
-            ESTATE MILLIONAIRE COACHING
-            <br />
-          </p>
-        </div>
-        <br />
+          Founder and CEO of The 10X real estate advisor and THE FUTURE REAL
+          ESTATE MILLIONAIRE COACHING<br />
+        </p>
       </div>
-      <div class='image-section'>
-        <img src='Set.jpg' alt='' />
+
+      <picture class='p-4 lg:w-2/5 lg:flex lg:items-center'>
+        <Image
+          class=''
+          src={ImageProfile}
+          alt='imagen de perfil de una persona'
+        />
+      </picture>
+    </section>
+
+    <section class='space-y-8 lg:flex lg:flex-col'>
+      <h2 class='text-slate-100 text-start text-4xl font-semibold italic'>
+        EPISODES
+      </h2>
+
+      <div class='space-y-6 lg:w-3/5 lg:self-end'>
+        <Episodes
+          date='February 2024'
+          episode='Episodio 5'
+          link='https://www.youtube.com/watch?v=SoaZzb6UD7U&t=15s'
+          body='Even though these two are new to real estate investing, they are killing it! Watch this episode as we talk about how they got started in real estate, their strategy to focus on buying, renovating, and rent travelling nursing properties, and their take on mindset. Enjoy!'
+        />
+
+        <Episodes
+          date='January 2024'
+          episode='Episodio 4'
+          link={'https://www.youtube.com/watch?v=SoaZzb6UD7U&t=15s'}
+          body='Watch this episode of my podcast show as donna cook breaks down the ins and outs of the rent to own market in Canada!'
+        />
+
+        <Episodes
+          date='January 2023'
+          episode='Episodio 3'
+          link='https://www.youtube.com/watch?v=JKWmN21clPI&t=1730s'
+          body='Had lots of fun this morning interviewing sergio manzur on my podcast show! A canadian argentinian real estate investor living & investing in the dominican republic, sergio shares very valuable info on investing in the dr & his new affilliation with dr properties as an investor specialist realtor.'
+        />
+        <Episodes
+          date='December 2023'
+          episode='Episodio 2'
+          link='https://www.youtube.com/watch?v=AUu0_TWhfFo&t=301s'
+          body='Check out my interview of derrick campbell, canadian multifamily investor! It was a lot of fun! Derrick shared top secrets on multifamily investing, how he started his real estate journey, & he even shared a little bit about his thoughts on trudeau Lol! Do watch it because there are some key takeaways for your multifamily business or if you are a new real estate investor, this is an episode that you will want to watch a few times & take notes!me in the subtitle.'
+        />
+        <Episodes
+          date='December 2023'
+          episode='Episodio 1'
+          link='https://www.youtube.com/watch?v=oP2b94IAynw&t=384s'
+          body='Watch this episode to learn from experienced canadian real estate investor, jesse topp! He talks to us about his real estate journey, his business acumen, & he gives new real estate investors sound real real estate advice! Enjoy!'
+        />
       </div>
-    </div>
-  </div>
-
-  <div class='section-episodes'>
-    <div class='contain'>
-      <div class='title-section'>
-        <div class='title'>
-          <h1>EPISODES</h1>
-        </div>
-      </div>
-      <section class='tabla'>
-        <table class='table caption-top'>
-          <tbody>
-            <tr>
-              <td style='color: #fcfdff;'
-                >February 2024 <button
-                  type='button'
-                  onclick="window.location.href='https://www.youtube.com/watch?v=SoaZzb6UD7U&t=15s'"
-                  class='btn btn-outline-warning'>Episodio 5</button
-                ></td
-              >
-              <td style='color: #fcfdff;'
-                >Even though these two are new to real estate investing, they
-                are killing it! Watch this episode as we talk about how they got
-                started in real estate, their strategy to focus on buying,
-                renovating, and rent travelling nursing properties, and their
-                take on mindset. Enjoy!</td
-              >
-            </tr>.
-
-            <tr>
-              <td style='color: #fcfdff;'
-                >January 2024 <button
-                  type='button'
-                  onclick="window.location.href='https://www.youtube.com/watch?v=SoaZzb6UD7U&t=15s'"
-                  class='btn btn-outline-warning'>Episodio 4</button
-                ></td
-              >
-              <td style='color: #fcfdff;'
-                >Watch this episode of my podcast show as donna cook breaks down
-                the ins and outs of the rent to own market in Canada!
-              </td>
-            </tr>
-
-            <tr>
-              <td style='color: #fcfdff;'
-                >January 2023 <button
-                  type='button'
-                  onclick="window.location.href='https://www.youtube.com/watch?v=JKWmN21clPI&t=1730s'"
-                  class='btn btn-outline-warning'>Episodio 3</button
-                ></td
-              >
-              <td style='color: #fcfdff;'
-                >Had lots of fun this morning interviewing sergio manzur on my
-                podcast show! A canadian argentinian real estate investor living
-                & investing in the dominican republic, sergio shares very
-                valuable info on investing in the dr & his new affilliation with
-                dr properties as an investor specialist realtor.</td
-              >
-            </tr>
-
-            <tr>
-              <td style='color: #fcfdff;'
-                >December 2023 <button
-                  type='button'
-                  onclick="window.location.href='https://www.youtube.com/watch?v=AUu0_TWhfFo&t=301s'"
-                  class='btn btn-outline-warning'>Episodio 2</button
-                ></td
-              >
-              <td style='color: #fcfdff;'
-                >Check out my interview of derrick campbell, canadian
-                multifamily investor! It was a lot of fun! Derrick shared top
-                secrets on multifamily investing, how he started his real estate
-                journey, & he even shared a little bit about his thoughts on
-                trudeau Lol! Do watch it because there are some key takeaways
-                for your multifamily business or if you are a new real estate
-                investor, this is an episode that you will want to watch a few
-                times & take notes!me in the subtitle.</td
-              >
-            </tr>
-
-            <tr>
-              <td style='color: #fcfdff;'
-                >December 2023 <button
-                  type='button'
-                  onclick="window.location.href='https://www.youtube.com/watch?v=oP2b94IAynw&t=384s'"
-                  class='btn btn-outline-warning'>Episodio 1</button
-                ></td
-              >
-              <td style='color: #fcfdff;'
-                >Watch this episode to learn from experienced canadian real
-                estate investor, jesse topp! He talks to us about his real
-                estate journey, his business acumen, & he gives new real estate
-                investors sound real real estate advice! Enjoy!</td
-              >
-            </tr>
-          </tbody>
-        </table>
-      </section>
-    </div>
-  </div>
+    </section>
+  </main>
 </Layout>
-<style>
-  /* Móviles grandes */
-  @media (min-width: 576px) {
-    /* Tus estilos para móviles grandes */
-  }
-
-  /* Tabletas */
-  @media (min-width: 768px) {
-    /* Tus estilos para tabletas */
-  }
-
-  /* Escritorios pequeños */
-  @media (min-width: 992px) {
-    /* Tus estilos para escritorios pequeños */
-  }
-
-  /* Escritorios grandes */
-  @media (min-width: 1200px) {
-    /* Tus estilos para escritorios grandes */
-    .tabla {
-      background-color: #393b3c;
-    }
-
-    .title-section {
-      float: left;
-      width: 55%;
-    }
-
-    .tabla {
-      float: right;
-      width: 60%;
-      min-height: 80vh;
-    }
-
-    .section-episodes {
-      width: 100%;
-      min-height: 120vh;
-      background-color: #393b3c;
-    }
-    .title {
-      color: #ffffff;
-      text-transform: uppercase;
-      font-size: 38px;
-      font-style: italic;
-      font-weight: bold;
-      text-align: left;
-      position: relative;
-      margin: 0;
-      padding: 0 0px; /* Añadido un espacio interior a los lados para separar el texto del borde */
-    }
-
-    p {
-      font-weight: 300;
-      color: white;
-      font-size: 15px;
-      text-align: left;
-      margin: 24px 0;
-      padding: 0;
-    }
-    .section {
-      width: 100%;
-      min-height: 60vh;
-      background-color: #393b3c;
-    }
-
-    .contain {
-      width: 80%;
-      display: block;
-      margin: auto;
-      padding-top: 100px;
-    }
-
-    .content-section {
-      float: left;
-      width: 55%;
-    }
-    .image-section {
-      float: right;
-      width: 40%;
-    }
-
-    .image-section img {
-      width: 100%;
-      height: auto;
-    }
-  }
-</style>
