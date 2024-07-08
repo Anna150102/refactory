@@ -3,117 +3,73 @@ import Layout from '../layouts/Layout.astro'
 ---
 
 <Layout title='Contact'>
-  <section class='encabezado'>
-    <h1>CONTACT US</h1>
+  <main class='bg-secondary-color space-y-4 px-4 py-10 md:px-20 lg:px-44'>
+    <h1 class='text-4xl text-slate-100 border-b-2 border-primary-color pb-2'>
+      CONTACT US
+    </h1>
 
-    <center
-      ><p>
-        If you have any questions or would like to learn more about my real
-        estate investing <br />coaching services, please fill out the form below
-        and I will get back to you as within 24 to<br /> 48 hours.
-      </p></center
-    >
-  </section>
+    <p class='text-slate-100 text-center'>
+      If you have any questions or would like to learn more about my real estate
+      investing coaching services, please fill out the form below and I will get
+      back to you as within 24 to 48 hours.
+    </p>
 
-  <section class='form'>
-    <form>
-      <div class='mb-3'>
-        <label for='name' class='form-label'>First Name</label>
-        <input type='text' class='form-control' id='name' />
+    <form class='mt-4 lg:px-40'>
+      <div class='mb-3 space-y-2 grid'>
+        <label for='name' class='text-slate-100 font-semibold'>
+          First Name
+        </label>
+        <input
+          type='text'
+          id='first-name'
+          class='text-white bg-secondary-color border-primary-color rounded-lg'
+        />
       </div>
-      <div class='mb-3'>
-        <label for='Last' class='form-label'>Last Name</label>
-        <input type='text' class='form-control' id='Last' />
+
+      <div class='mb-3 space-y-2 grid'>
+        <label for='name' class='text-slate-100 font-semibold'>
+          Last Name
+        </label>
+        <input
+          type='text'
+          id='last-name'
+          class='text-white bg-secondary-color border-primary-color rounded-lg'
+        />
       </div>
-      <div class='mb-3'>
-        <label for='exampleInputEmail1' class='form-label'>Email *</label>
+
+      <div class='mb-3 space-y-2 grid'>
+        <label for='name' class='text-slate-100 font-semibold'>Email * </label>
         <input
           type='email'
-          class='form-control'
-          id='exampleInputEmail1'
-          aria-describedby='emailHelp'
+          id='help-email'
+          class='text-white bg-secondary-color border-primary-color rounded-lg'
         />
-        <div id='emailHelp' class='form-text'>
-          We'll never share your email with anyone else.
-        </div>
-      </div>
-      <div class='mb-3'>
-        <label for='Phone' class='form-label'>Phone</label>
-        <input type='number' class='form-control' id='Phone' />
-      </div>
-      <div class='mb-3'>
-        <label for='Comments' class='form-label'>Comments</label>
-        <input type='text' class='form-control' id='Comments' />
+        <span class='text-slate-100 text-sm'
+          >We'll never share your email with anyone else.</span
+        >
       </div>
 
-      <button type='button' class='btn btn-outline-warning'>SUBMIT</button>
+      <div class='mb-3 space-y-2 grid'>
+        <label for='name' class='text-slate-100 font-semibold'>Phone</label>
+        <input
+          type='tel'
+          id='phone'
+          class='text-white bg-secondary-color border-primary-color rounded-lg'
+        />
+      </div>
+
+      <div class='mb-3 space-y-2 grid'>
+        <label for='name' class='text-slate-100 font-semibold'>Comments</label>
+        <textarea
+          name='comments'
+          class='text-white bg-secondary-color border-primary-color rounded-lg'
+        ></textarea>
+      </div>
+
+      <button
+        class='bg-primary-color text-lg text-black font-semibold rounded-lg px-5 py-2.5 text-center'
+        >Submit</button
+      >
     </form>
-  </section>
+  </main>
 </Layout>
-
-<style>
-  /* Móviles grandes */
-  @media (min-width: 576px) {
-    /* Tus estilos para móviles grandes */
-  }
-
-  /* Tabletas */
-  @media (min-width: 768px) {
-    /* Tus estilos para tabletas */
-  }
-
-  /* Escritorios pequeños */
-  @media (min-width: 992px) {
-    /* Tus estilos para escritorios pequeños */
-  }
-
-  /* Escritorios grandes */
-  @media (min-width: 1200px) {
-    /* Tus estilos para escritorios grandes */
-    body {
-      background-color: #393b3c;
-    }
-    h5 {
-      font-weight: normal;
-      color: white;
-      font-size: 16px;
-      text-align: center;
-    }
-
-    .section form {
-      background-color: #393b3c;
-    }
-
-    .form {
-      width: 960px;
-      margin: 60px auto 20px;
-      color: #f8f8f8;
-    }
-    .form-text {
-      font-size: 14px;
-      color: #ffffff;
-    }
-
-    .form-label {
-      font-size: 14px;
-      color: #ffffff;
-    }
-    .form-control {
-      background-color: #393b3c;
-      border: 1px solid rgb(199, 166, 18);
-    }
-
-    h1 {
-      width: 960px;
-      margin: 60px auto 20px;
-      color: #ffffff;
-      font-size: 40px;
-      border-bottom: 2px solid #ffc107;
-    }
-
-    p {
-      color: #ffffff;
-      font-size: 18px;
-    }
-  }
-</style>

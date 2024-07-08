@@ -6,17 +6,23 @@ settings:
 
 dependencies:
   '@astrojs/tailwind':
-    specifier: ^5.1.0
+    specifier: 5.1.0
     version: 5.1.0(astro@4.11.5)(tailwindcss@3.4.4)
   astro:
-    specifier: ^4.11.5
-    version: 4.11.5
+    specifier: 4.11.5
+    version: 4.11.5(typescript@5.5.3)
   flowbite:
-    specifier: ^2.4.1
+    specifier: 2.4.1
     version: 2.4.1
+  lucide-astro:
+    specifier: 0.399.0
+    version: 0.399.0(astro@4.11.5)
   tailwindcss:
-    specifier: ^3.4.4
+    specifier: 3.4.4
     version: 3.4.4
+  typescript:
+    specifier: 5.5.3
+    version: 5.5.3
 
 packages:
 
@@ -79,7 +85,7 @@ packages:
       astro: ^3.0.0 || ^4.0.0
       tailwindcss: ^3.0.24
     dependencies:
-      astro: 4.11.5
+      astro: 4.11.5(typescript@5.5.3)
       autoprefixer: 10.4.19(postcss@8.4.39)
       postcss: 8.4.39
       postcss-load-config: 4.0.2(postcss@8.4.39)
@@ -1134,7 +1140,7 @@ packages:
     resolution: {integrity: sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==}
     dev: false
 
-  /astro@4.11.5:
+  /astro@4.11.5(typescript@5.5.3):
     resolution: {integrity: sha512-TCRhuaLwrxwMhS8S1GG+ZTdrAXigX9C8E/YUTs/r2t+owHxDgwl86IV9xH1IHrCPoqhK6civyAQNOT+GKmkb0A==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
@@ -1192,7 +1198,7 @@ packages:
       shiki: 1.10.1
       string-width: 7.2.0
       strip-ansi: 7.1.0
-      tsconfck: 3.1.1
+      tsconfck: 3.1.1(typescript@5.5.3)
       unist-util-visit: 5.0.0
       vfile: 6.0.1
       vite: 5.3.3
@@ -2181,6 +2187,14 @@ packages:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
     dependencies:
       yallist: 3.1.1
+    dev: false
+
+  /lucide-astro@0.399.0(astro@4.11.5):
+    resolution: {integrity: sha512-MEl8cJXCC9A/QysuLrJbXB1JkYxqZgycNZtLXeomBeFeuKkC4wrpLeufGC12/ZFleVisgauhy1G3wbD2mmrIzA==}
+    peerDependencies:
+      astro: '>=2.7.1'
+    dependencies:
+      astro: 4.11.5(typescript@5.5.3)
     dev: false
 
   /magic-string@0.30.10:
@@ -3404,7 +3418,7 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: false
 
-  /tsconfck@3.1.1:
+  /tsconfck@3.1.1(typescript@5.5.3):
     resolution: {integrity: sha512-00eoI6WY57SvZEVjm13stEVE90VkEdJAFGgpFLTsZbJyW/LwFQ7uQxJHWpZ2hzSWgCPKc9AnBnNP+0X7o3hAmQ==}
     engines: {node: ^18 || >=20}
     hasBin: true
@@ -3413,6 +3427,8 @@ packages:
     peerDependenciesMeta:
       typescript:
         optional: true
+    dependencies:
+      typescript: 5.5.3
     dev: false
 
   /tslib@2.6.3:
@@ -3424,6 +3440,12 @@ packages:
   /type-fest@2.19.0:
     resolution: {integrity: sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==}
     engines: {node: '>=12.20'}
+    dev: false
+
+  /typescript@5.5.3:
+    resolution: {integrity: sha512-/hreyEujaB0w76zKo6717l3L0o/qEUtRgdvUBvlkhoWeOVMjMuHNHk0BRBzikzuGDqNmPQbg5ifMEqsHLiIUcQ==}
+    engines: {node: '>=14.17'}
+    hasBin: true
     dev: false
 
   /unified@11.0.5:
